@@ -1,0 +1,82 @@
+.contenedor {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slidein;
+    margin-top: 20%;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-top: -30%;
+    }
+  
+    to {
+      margin-top: 20%;
+    }
+  }
+
+  .centrar{
+    margin: auto;
+    width: 60%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .9s ease;
+    cursor: pointer;
+  }
+  
+  .image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .9s ease;
+  }
+
+  .textoentrar{
+    font-size:3vw;
+    text-align: center;
+    opacity: 0;
+    color: rgba(99, 99, 99, 0.651);
+    transition: .9s ease;
+    background: -webkit-linear-gradient(#333, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+  }
+
+  .contenedor:hover .overlay {
+    opacity: 1;
+  }
+
+  .contenedor:hover .textoentrar{
+    opacity: 1;
+  }
+
+  .contenedor:hover .image{
+      opacity: 0;
+  }
+
